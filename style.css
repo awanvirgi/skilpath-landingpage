@@ -1,0 +1,489 @@
+:root {
+    --brand-color: #B40000;
+    --second-text: #FFFFFF;
+    --second-bg: #F1F5F8;
+    --main-base: #FFFFFF;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+nav {
+    background-color: var(--brand-color);
+    color: #FFFFFF;
+    
+    align-items: center;
+
+    z-index: 999;
+
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+    height: 83px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+
+    color: white;
+}
+
+.logo>img {
+    margin-right: 10px;
+}
+
+.nav-title h1 {
+    display: none;
+}
+
+#myLinks {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: 999;
+
+    width: 100%;
+
+    list-style: none;
+
+    background-color: #F1F5F8;
+    color: var(--brand-color);
+    font-weight: 600;
+
+}
+
+nav ul li {
+    padding: 10px;
+    border-bottom: 2px #D9D9D9 solid;
+    text-align: center;
+}
+
+.hamburger {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* hero page */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: var(--brand-color);
+    color: var(--second-text);
+    border-radius: 10px;
+
+    overflow: hidden;
+    height: 175px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 36px;
+
+}
+
+.hero-container {
+    min-width: 150px;
+    margin-left: 15px;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-container h1 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.hero-doctor {
+    position: relative;
+
+    min-width: 162px;
+    height: 100%;
+    
+    display: flex;
+}
+
+.hero-doctor img {
+    width: 100%;
+}
+
+.hero-hospital {
+    position: relative;
+    display: flex;
+
+    padding-right: 15px;
+}
+
+.hero-hospital img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.second-btn {
+    padding: 9px;
+    border-radius: 10px;
+    border: none;
+
+    background-color: var(--main-base);
+    color: var(--brand-color);
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* articles list menu */
+article {
+    margin-bottom: 36px;
+}
+
+article>h3 {
+    margin-bottom: 24px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+.card-content {
+    width: min-content;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.card-area {
+    height: 72px;
+    width: 72px;
+
+    background-color: var(--brand-color);
+
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+
+    display: flex;
+    justify-content: center;
+}
+.card-area > img{
+    width: 100%;
+}
+
+/* forum */
+.forum-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+
+    width: 100%;
+    overflow: hidden;
+}
+
+.forum-card h4{
+    max-width: 350px;
+}
+
+.forum-card {
+    height: 105px;
+    min-width: 320px;
+
+    background-color: var(--second-bg);
+
+    padding: 16px;
+    border-radius: 10px;
+
+    flex: 1;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    text-align: left;
+}
+
+.forum-card p {
+    font-size: 14px;
+}
+
+.forum-status {
+    font-size: 8px;
+    color: rgb(16, 183, 16);
+}
+/* form */
+.form{
+    background-color: var(--second-bg);
+
+    border-radius: 10px;
+    padding:30px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+.form > h3{
+    margin-bottom: 12px;
+}
+.form > input{
+    height: 40px;
+
+    border-radius: 10px;
+    padding-left: 18px;
+    margin-bottom: 12px;
+}
+.form > input[type="checkbox"]{
+    height: 18px;
+
+    display: inline-block;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+#check{
+    font-size: 10px;
+    margin-bottom: 18px;
+}
+.main-button{
+    background-color: var(--brand-color);
+
+    color: var(--second-text);
+    font-weight: 500;
+
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+
+
+/* footer */
+footer {
+    padding: 24px;
+    box-sizing: border-box;
+
+    background: var(--Danger, #740A0A);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+
+    text-align: center;
+    color: var(--second-text);
+}
+
+.footer-navigate {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-navigate>ul {
+    list-style: none;
+    text-decoration: underline;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+    font-size: 14px;
+}
+
+footer>.logo {
+    width: max-content;
+
+}
+
+footer>.logo>img {
+    height: 40px;
+
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon>svg {
+    width: 40px;
+    height: auto;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    padding: 0;
+}
+
+@media screen and (min-width: 770px) {
+    .nav-title h1 {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 620px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0 60px;
+    }
+
+    #myLinks {
+        display: flex;
+
+        background-color: transparent;
+        color: unset;
+
+        position: relative;
+
+        width: auto;
+    }
+
+    nav ul li {
+        border: none;
+
+    }
+
+    /* hero page */
+    main {
+        padding: 25px 60px;
+    }
+
+    section {
+        justify-content: space-between;
+        align-items: center;
+
+        height: 333px;
+    }
+
+    .hero-container {
+        width: 500px;
+        margin: 40px;
+        gap: 25px;
+    }
+
+    .hero-container h1 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .second-btn {
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .hero-hospital {
+        height: 100%;
+        box-sizing: border-box;
+        padding: 40px;
+    }
+
+    /* articles list menu */
+
+    article {
+        text-align: center;
+    }
+
+    .card-container {
+        justify-content: center;
+        gap: 48px;
+    }
+
+    .card-area {
+        height: 120px;
+        width: 120px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .forum-card {
+        min-width: 320px;
+    }
+
+    /* form */
+    #check{
+        font-size: 14px;
+    }
+    .form-container{
+        display: flex;
+        justify-content: center;
+    }
+    .form > label{
+        font-size: 18px;
+    }
+    .form{
+        max-width: 420px;
+        padding:40px 50px;
+        box-sizing: border-box;
+    }
+
+    /* footer */
+    .social-media > h5{
+        font-size: 18px;
+    }
+    .social-icon{
+        gap: 35px;
+    }
+
+}
